@@ -27,9 +27,10 @@ void selection_sort(int *A, int n)
 {
     printf("Running Selection Sort...\n");
     int index_of_min;
-    for (int i=0; i<n; i++)
+    for (int i=0; i<n-1; i++)
     {
         index_of_min = i;
+        // Compairing all the elements and finding the minimum for the given index
         for (int j=i; j<n; j++)
         {
             if(A[j]<A[index_of_min])
